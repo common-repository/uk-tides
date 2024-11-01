@@ -1,0 +1,30 @@
+{
+	"name": "uk-tides",
+	"version": "3.3.1",
+	"description": "UK tides",
+	"author": "bobbingwide",
+	"license": "GPLv3",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update",
+		"dev": "wp-scripts start",
+		"makepot": "wp i18n make-pot . languages/uk-tides.pot --ignore-domain  --exclude=node_modules,vendor,src",
+		"makejson": "wp i18n make-json languages --no-purge",
+		"l10n": "l10n uk-tides"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^14.3.0",
+		"@wordpress/blocks": "^13.8.0",
+		"@wordpress/i18n": "^5.8.0",
+		"clsx": "^2.1.1",
+		"postcss": "^8.4.31"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.0.2"
+	}
+}
